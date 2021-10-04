@@ -5,21 +5,7 @@ const routes = [
   {
     path: "/",
     name: "Index",
-    component: Index,
-    children: [
-      {
-        path: "",
-        component: () => import("../views/MapOnly.vue")
-      },
-      {
-        path: "map-places",
-        component: () => import("../views/MapPlaces.vue")
-      },
-      {
-        path: "map-marker",
-        component: () => import("../views/MapMarker.vue")
-      }
-    ]
+    component: Index
   }
 ];
 
